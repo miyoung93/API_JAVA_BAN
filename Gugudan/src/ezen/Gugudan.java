@@ -13,6 +13,9 @@ public class Gugudan {
 			System.out.println(dan + " x " + i + " = " + dan*i);
 		}
 		
+		System.out.println(2*1);
+		
+		
 	}
 
 }
