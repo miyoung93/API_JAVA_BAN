@@ -7,8 +7,11 @@ public class Gugudan {
 
 		System.out.println("구구단 연습문제");
 		
-		System.out.println(2 * 1);
-		System.out.println(2 * 9);
+		int dan = 2;
+		
+		for (int i = 1; i < 10; i++) {
+			System.out.println(dan + " x " + i + " = " + dan*i);
+		}
 		
 	}
 
