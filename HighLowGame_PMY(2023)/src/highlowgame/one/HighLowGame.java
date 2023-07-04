@@ -12,21 +12,21 @@ public class HighLowGame {
 	public void gameStart(Card card) {
 		System.out.println("그럼 오늘은 \"하이&로\"로 대결하자!");
 
-		timeDelay2();
+		timeDelay(2);
 		
 		System.out.println("그럼 시작한다~!");
 
-		timeDelay2();
+		timeDelay(2);
 
 		System.out.println("1부터 9까지의 카드 2장을 뽑을거야!");
 		
-		timeDelay2();
+		timeDelay(2);
 
 		System.out.println("먼저 카드를 1장 뽑고...");
 
 		card.card1();
 		
-		timeDelay3();
+		timeDelay(3);
 
 		// 1번 카드 이미지
 		System.out.println("첫 번째 카드");
@@ -36,13 +36,13 @@ public class HighLowGame {
 
 		System.out.println("첫 번째 카드는 [" + card.card1 + "]이구나...!");
 
-		timeDelay2();
+		timeDelay(2);
 
 		System.out.println("자, 이어서 1장 더 뽑을게~");
 
 		card.card2();
 		
-		timeDelay3();
+		timeDelay(3);
 
 		System.out.println("좋아, 뽑았어!");
 
@@ -52,11 +52,11 @@ public class HighLowGame {
 		System.out.println("│ " + "?" + " │");
 		System.out.println("└───┘");
 
-		timeDelay2();
+		timeDelay(2);
 
 		System.out.println("그럼 이 카드의 숫자는 [" + card.card1 + "]보다 클까, 아니면 작을까...?");
 
-		timeDelay1();
+		timeDelay(1);
 
 		System.out.println("한번 맞혀봐~");
 		
@@ -73,7 +73,7 @@ public class HighLowGame {
 			try {
 				System.out.println("혹시 괜찮다면 게임하면서 놀지 않을래?");
 			    
-			    timeDelay1();
+			    timeDelay(1);
 			    
 				System.out.println("\"할래!\"는 Y를 입력해주세요.\n\"지금은 됐어\"는 N을 입력해주세요. ");
 				user = sc.nextLine();
@@ -141,11 +141,11 @@ public class HighLowGame {
 	
 	// 정답 공개
 	public void openAnswer() {
-		timeDelay1();
+		timeDelay(1);
 		
 		System.out.println("자~아, 과연 정답은...?");
 
-		timeDelay3();
+		timeDelay(3);
 	}
 
 	
@@ -158,11 +158,11 @@ public class HighLowGame {
 
 		System.out.print("[" + card.card2 + "]! ");
 
-		timeDelay1();
+		timeDelay(1);
 
 		System.out.println("정답이야~");
 
-		timeDelay1();
+		timeDelay(1);
 
 		System.out.println("축하해~!");
 	}
@@ -177,43 +177,24 @@ public class HighLowGame {
 
 		System.out.println("[" + card.card2 + "] 카드였습니다~! ");
 
-		timeDelay1();
+		timeDelay(1);
 
 		System.out.println("아쉽지만 오답이야~");
 
-		timeDelay2();
+		timeDelay(2);
 
 		System.out.println("아쉽게 됐지만 그래도 난 같이 놀아서 즐거웠어~\n포기하지 말고 다음에 또 해보자");
 	}
 
 	
-	// 1초 지연
-	public void timeDelay1() {
-		try {
-			Thread.sleep(1000);
-		} catch (Exception e) {
-			System.out.println(e);
+	//시간 지연
+		public void timeDelay(int time) {
+			try {
+				Thread.sleep(time*1000);
+			} catch (Exception e) {
+				System.out.println(e);
+			}
 		}
-	}
-
-	// 2초 지연
-	public void timeDelay2() {
-		try {
-			Thread.sleep(2000);
-		} catch (Exception e) {
-			System.out.println(e);
-		}
-	}
-
-	// 3초 지연
-	public void timeDelay3() {
-		try {
-			Thread.sleep(3000);
-		} catch (Exception e) {
-			System.out.println(e);
-		}
-	}
-
 	
 	
 	
