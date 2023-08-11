@@ -4,12 +4,12 @@
 /* 공통 */
 
 * {
-  font-family: "SF Pro Text" !important;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
 }
 
 body{
-	background-color: #f0f2f5;
-	
+	background-color: #F0F2F5;
 }
 
 @font-face {
@@ -114,15 +114,17 @@ body{
 
 /* header */
 
-
-
-
-/* 회원가입 */
-
-.joinMain{
+/* 로그인/로그아웃 */
+.loginMain{
 	margin: 0 auto;
     text-align: center;
 }
+
+.introduce{
+	font-size: 24px;
+}
+
+/* 회원가입 */
 
 .frm{
 	background-color: #fff;
