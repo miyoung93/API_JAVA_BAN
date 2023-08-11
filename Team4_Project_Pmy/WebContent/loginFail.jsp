@@ -31,9 +31,8 @@
 		
 	</script>
 </head>
-<body>
+<body style="background-color: #F0F2F5;">
 	
-	<body style="background-color: #F0F2F5;">
 	<div>
 		<div style="text-align: center;">
 			<div>
