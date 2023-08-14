@@ -76,8 +76,8 @@ import fb.dto.MemberDto;
 			
 			String sql = "";
 			
-			sql += "SELECT MNAME, EMAIL";
-			sql += " FROM MEMBERS";
+			sql += "SELECT FULL_NAME, EMAIL";
+			sql += " FROM MEMBER";
 			sql += " WHERE EMAIL = ?";
 			sql += " AND PWD = ?";
 			
@@ -96,8 +96,11 @@ import fb.dto.MemberDto;
 				MemberDto memberDto = new MemberDto();
 				
 				if(rs.next()) {
-					email = rs.getString("email");
 					
+					name = rs.getString("FULL_NAME");
+					email = rs.getString("EMAIL");
+					
+					memberDto.setFull_name(name);
 					memberDto.setEmail(email);
 					
 					return memberDto;
