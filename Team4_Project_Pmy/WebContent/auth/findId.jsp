@@ -20,10 +20,10 @@
 					내 계정 찾기
 				</div>
 				<div class="line"></div>
-				<div>계정을 검색하려면 이메일 주소 또는 휴대폰 번호를 입력하세요.</div>
+				<div>계정을 검색하려면 이메일 주소를 입력하세요.</div>
 				<div class="loginDiv">
-					<input class="loginInput" type="email" name="email" placeholder="이메일 또는 전화번호"
-						aria-label="이메일 또는 전화번호">
+					<input class="loginInput" type="email" name="email" placeholder="이메일"
+						aria-label="이메일 ">
 				</div>
 				<div class="line"></div>
 				<div class="findPwDiv">

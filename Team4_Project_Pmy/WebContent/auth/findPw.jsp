@@ -20,9 +20,9 @@
 					비밀번호 재설정
 				</div>
 				<div class="line"></div>
-				<div>어떤 방법으로 비밀번호 재설정 코드를 받으시겠어요?</div>
+				<div>어떤 방법으로 비밀번호를 받으시겠어요?</div>
 				<div class="loginDiv">
-					<label><input type="radio" name="pwd">SMS로 코드 받기</label>
+					<label><input type="radio" name="pwd">기존 비밀번호 안내 받기</label>
 					<label><input type="radio" name="pwd">비밀번호를 입력하여 로그인</label>
 				</div>
 				<div class="line"></div>

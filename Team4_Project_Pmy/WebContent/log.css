@@ -110,9 +110,22 @@ body{
 	margin: -15px;
 }
 
-
+.error_logo{
+	width: 30px;
+	overflow: clip;
+	overflow-clip-margin: content-box;
+	cursor: pointer;
+	text-align: center;
+}
 
 /* header */
+.header{
+	height: 30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
+}
+
 
 /* 로그인/로그아웃 */
 .loginMain{
