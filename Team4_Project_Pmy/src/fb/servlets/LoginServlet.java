@@ -18,7 +18,7 @@ import javax.servlet.http.HttpSession;
 import fb.dao.MemberDao;
 import fb.dto.MemberDto;
 
-@WebServlet(value = "/auth/login")
+@WebServlet("/auth/login")
 public class LoginServlet extends HttpServlet{
 
 	@Override
@@ -62,7 +62,7 @@ public class LoginServlet extends HttpServlet{
 			HttpSession session = req.getSession();
 			session.setAttribute("member", memberDto);
 			
-			res.sendRedirect("../member/list");
+			res.sendRedirect("../board/list");
 			
 		} catch (Exception e) {
 			// TODO Auto-generated catch block

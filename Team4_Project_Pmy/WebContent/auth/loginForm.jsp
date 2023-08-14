@@ -37,9 +37,7 @@
 							aria-label="비밀번호">
 					</div>
 					<div class="loginDiv">
-						<button class="loginButton" type="submit" name="login">
-							로그인
-						</button>
+						<input class="loginButton" type="submit" name="login" value="로그인">
 					</div>
 					<div class="findPwDiv">
 						<a class="findPw" href="">비밀번호를 잊으셨나요?</a>
@@ -47,9 +45,7 @@
 					<div class="line">
 					</div>
 					<div class="loginDiv">
-						<button class="createAccount" type="submit" name="join">
-							새 계정 만들기
-						</button>
+						<input class="createAccount" type="submit" name="join" value="새 계정 만들기">
 					</div>
 				</form>
 			</div>
