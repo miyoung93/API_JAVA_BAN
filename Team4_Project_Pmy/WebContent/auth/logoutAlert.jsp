@@ -22,7 +22,7 @@
 				로그아웃 하시겠어요?
 			</div>
 			<div class="loginForm">
-				<form method="post" action="">
+				<form method="post" action="./logout">
 					<div>
 					ooo님
 					</div>
