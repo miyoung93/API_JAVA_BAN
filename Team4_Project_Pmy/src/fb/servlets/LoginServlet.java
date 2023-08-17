@@ -26,7 +26,7 @@ public class LoginServlet extends HttpServlet{
 		throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		
-		RequestDispatcher rd = req.getRequestDispatcher("./LoginForm.jsp");
+		RequestDispatcher rd = req.getRequestDispatcher("./loginForm.jsp");
 		rd.forward(req, res);
 		
 	}
@@ -48,21 +48,55 @@ public class LoginServlet extends HttpServlet{
 			MemberDao memberDao = new MemberDao();
 			memberDao.setConnection(conn);
 			
-			MemberDto memberDto = memberDao.memberExist(email, pwd);
+			MemberDto memberDto = memberDao.findPwByEmail(email);
 			
-			// 회원이 없다면 로그인 실패 페이지로 이동
-			if(memberDto == null) {
+			//이메일 확인
+			
+			if(memberDto.getEmail().isEmpty()) {
+				
 				RequestDispatcher rd = 
-						req.getRequestDispatcher("./LoginFail.jsp");
+						req.getRequestDispatcher("./loginFail.jsp");
 					
 					rd.forward(req, res);
+				
+			} else {
+				
+				memberDto = memberDao.memberLogin(email, pwd);
+				req.setAttribute("memberDto", memberDto);
+				
+				if(memberDto == null){
+					memberDto = memberDao.findPwByEmail(email);
+					req.setAttribute("memberDto", memberDto);
+					req.setAttribute("failedPwd", "failedPwd");
+					
+					RequestDispatcher rd = 
+							req.getRequestDispatcher("./IdLogin.jsp");
+						
+						rd.forward(req, res);
+						
+				} else {
+					HttpSession session = req.getSession();
+					session.setAttribute("member", memberDto);
+					
+					res.sendRedirect("../board/list");
+				}
 			}
 			
-			// 회원이 존재한다면 세션에 담고 회원 전체 페이지로 이동
-			HttpSession session = req.getSession();
-			session.setAttribute("member", memberDto);
 			
-			res.sendRedirect("../board/list");
+//			if(memberDto == null) {
+//				RequestDispatcher rd = 
+//						req.getRequestDispatcher("./loginFail.jsp");
+//					
+//					rd.forward(req, res);
+//			} else if(memberDto.equals(obj)) {
+//				
+//			} else {
+//				HttpSession session = req.getSession();
+//				session.setAttribute("member", memberDto);
+//				
+//				res.sendRedirect("../board/list");
+//			}
+			
 			
 		} catch (Exception e) {
 			// TODO Auto-generated catch block

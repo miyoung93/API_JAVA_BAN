@@ -5,31 +5,31 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<link href="/Team4_Project/css/log.css" rel="stylesheet" type="text/css">
-	<title>Facebook Find Password</title>
+	<link href="../log.css" rel="stylesheet" type="text/css">
+	<title>Facebook Find ID</title>
 	<script type="text/javascript">
-	
+		
 	</script>
 </head>
 <body>
 	
-	<div class="header">
+	<div>
 		<div class="loginForm">
-			<form method="post" action="./findPw">
+			<form>
 				<div>
 					비밀번호 재설정
 				</div>
 				<div class="line"></div>
 				<div>어떤 방법으로 비밀번호를 받으시겠어요?</div>
 				<div class="loginDiv">
-					<label><input type="radio" name="pwd" id="option1" value='option1'>기존 비밀번호 안내 받기</label>
-					<label><input type="radio" name="pwd" id="option2" value='option2'>비밀번호를 입력하여 로그인</label>
+					<label><input type="radio" name="pwd">기존 비밀번호 안내 받기</label>
+					<label><input type="radio" name="pwd">비밀번호를 입력하여 로그인</label>
 				</div>
 				<div class="line"></div>
 				<div class="findPwDiv">
 					<!-- 누르면 내 계정 찾기로 이동 -->
-					<a href="./findMyAccount">회원님이 아닌가요?</a>
-					<input type="submit" name="continue" value="계속하기">
+					<a type="reset" name="cancle">회원님이 아닌가요?</button>
+					<button type="submit" name="search">계속하기</button>
 				</div>
 			</form>
 		</div>

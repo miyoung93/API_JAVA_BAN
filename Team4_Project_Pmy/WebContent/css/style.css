@@ -1,0 +1,363 @@
+@charset "UTF-8";
+
+
+/* 공통 */
+
+* {
+  font-family: "SF Pro Text" !important;
+}
+
+body{
+	background-color: #F0F2F5;
+}
+
+@font-face {
+  font-family: "SF Pro Text";
+  font-style: normal;
+  font-weight: 300;
+  src: url("https://raw.githubusercontent.com/blaisck/sfwin/master/SFPro/TrueType/SFProText-Light.ttf");
+}
+@font-face {
+  font-family: "SF Pro Text";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://raw.githubusercontent.com/blaisck/sfwin/master/SFPro/TrueType/SFProText-Regular.ttf");
+}
+@font-face {
+  font-family: "SF Pro Text";
+  font-style: normal;
+  font-weight: 500;
+  src: url("https://raw.githubusercontent.com/blaisck/sfwin/master/SFPro/TrueType/SFProText-Medium.ttf");
+}
+@font-face {
+  font-family: "SF Pro Text";
+  font-style: normal;
+  font-weight: 600;
+  src: url("https://raw.githubusercontent.com/blaisck/sfwin/master/SFPro/TrueType/SFProText-SemiBold.ttf");
+}
+@font-face {
+  font-family: "SF Pro Text";
+  font-style: normal;
+  font-weight: 700;
+  src: url("https://raw.githubusercontent.com/blaisck/sfwin/master/SFPro/TrueType/SFProText-Bold.ttf");
+}
+@font-face {
+  font-family: "SF Pro Text";
+  font-style: normal;
+  font-weight: 900;
+  src: url("https://raw.githubusercontent.com/blaisck/sfwin/master/SFPro/TrueType/SFProText-Heavy.ttf");
+}
+@font-face {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 100;
+  src: url("https://raw.githubusercontent.com/blaisck/sfwin/master/SFPro/TrueType/SFProDisplay-Ultralight.ttf");
+}
+@font-face {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 200;
+  src: url("https://raw.githubusercontent.com/blaisck/sfwin/master/SFPro/TrueType/SFProDisplay-Thin.ttf");
+}
+@font-face {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 300;
+  src: url("https://raw.githubusercontent.com/blaisck/sfwin/master/SFPro/TrueType/SFProDisplay-Light.ttf");
+}
+@font-face {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://raw.githubusercontent.com/blaisck/sfwin/master/SFPro/TrueType/SFProDisplay-Regular.ttf");
+}
+@font-face {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 500;
+  src: url("https://raw.githubusercontent.com/blaisck/sfwin/master/SFPro/TrueType/SFProDisplay-Medium.ttf");
+}
+@font-face {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 600;
+  src: url("https://raw.githubusercontent.com/blaisck/sfwin/master/SFPro/TrueType/SFProDisplay-SemiBold.ttf");
+}
+@font-face {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 700;
+  src: url("https://raw.githubusercontent.com/blaisck/sfwin/master/SFPro/TrueType/SFProDisplay-Bold.ttf");
+}
+@font-face {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 800;
+  src: url("https://raw.githubusercontent.com/blaisck/sfwin/master/SFPro/TrueType/SFProDisplay-Black.ttf");
+}
+@font-face {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 900;
+  src: url("https://raw.githubusercontent.com/blaisck/sfwin/master/SFPro/TrueType/SFProDisplay-Heavy.ttf");
+}
+
+
+.logo {
+	width: 301.06px;
+	height: 106px;
+	margin: -15px;
+}
+
+
+
+/* header */
+
+
+
+
+/* 회원가입 */
+
+.joinMain{
+	margin: 0 auto;
+    text-align: center;
+}
+
+.joinMain > .logo{
+	margin: 0 auto;
+    text-align: center;
+}
+
+.saluteForm{ 
+	margin 10px 0;
+	
+}
+
+.frm{
+	background-color: #fff;
+	width : 400px;
+	display: inline-block;
+    position: relative;
+    text-align: left;
+    border: 1px solid #dddfe2;
+    font-size: 13px;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 8px;
+	
+}
+
+.join_first_salute{
+	display: flex;
+	color: #1c1e21;
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 0;
+	font-weight: 600;
+	justify-content: space-between;
+}
+
+.join_cancel{
+	
+	width: 20px;
+	height: 20px;
+	
+}
+
+.join_second_salute{
+	
+    color: #606770;
+    font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 0;
+	
+}
+
+.firstForm input{
+	width: 170px;
+	padding : 11px;
+	font-size: 15px;
+	line-height: 16px;
+	border: 1px solid #ccd0d5;
+	background: #f5f6f7;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	
+}
+
+.line{
+	width:400px;
+	border-bottom: 1px solid #dadde1;
+	margin: 20px auto;
+}
+
+.secondForm input{
+	
+	width : 370px;
+	padding : 11px;
+	font-size: 15px;
+	line-height: 16px;
+	border: 1px solid #ccd0d5;
+	background: #f5f6f7;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	
+}
+
+.thirdForm p{
+
+	margin: 0 0 2px 0;
+	color: #606770;
+}
+
+.thirdForm select{
+	width:120px;
+    border-radius: 4px;
+    border: 1px solid #ccd0d5;
+    color: #1c1e21;
+    font-size: 15px;
+    font-weight: normal;
+    height: 36px;
+    line-height: 20px;
+    margin-right: 10px;
+    
+}
+
+.fourthForm p{
+
+	margin: 10px 0 2px 0;
+	color: #606770;
+}
+
+.fourthForm .menBoxDiv{
+	display: inline-block;
+	width:100px;
+    border-radius: 4px;
+    border: 1px solid #ccd0d5;
+    color: #1c1e21;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 20px;
+    margin-right: 10px;
+	
+}
+
+.menBox{
+	
+	justify-content: space-between;
+    display: flex;
+    margin: 8px 5px;
+	
+}
+    
+
+.joinInfo{
+	
+	color:#777;
+	font-size: 11px;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    display: none;
+    margin-top: 5px;
+}
+
+.error-message2 {
+    color: red;
+    font-size: 14px;
+    display: none;
+    margin-top: 5px;
+}
+
+.error-field {
+    border: 2px solid red !important;
+}
+
+.icon-error {
+    background-image: url('img/exclamation-icon.png');
+    background-size: 20px 20px;
+    background-position: right center;
+    background-repeat: no-repeat;
+    padding-right: 30px;
+}
+
+.joinBtn{
+	color: #fff;
+	font-weight:bold;
+	width:190px;
+	height:40px;
+	background-color: #42b72a;
+	border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    padding: 0 16px;
+}
+
+.joinBtnDiv
+{
+	margin: 20px 0;
+	text-align: center;
+	
+}
+
+
+.agree{
+	border : 1px solid red;
+	padding : 7px 3px;
+	background-color: #ffebe8;
+	text-align: center;
+	font-size: 12px;
+	margin-bottom: 25px;
+}
+
+.robotCheck p{
+	font-weight: bold;
+	
+}
+
+
+.robotForm {
+	border: 1px solid #808089;
+	padding: 27px 10px;
+	font-size: 14px;
+	background-color: #f5f5f5;
+}
+
+.capcha{
+	display: inline-block;
+	float: right;
+	margin: -20px 10px;
+}
+
+.capcha img{
+	margin: 0 20px;
+}
+
+.capcha p{
+	font-size: 10px;
+	margin: 0;
+	color: #808089;
+	text-align: center;
+}
+
+.agreeInfo{
+	font-size: 12px;
+	margin-bottom: 30px;
+	
+}
+
+
+.agreeForm {
+	border: 1px solid black;
+	height: 120px;
+	overflow-y: scroll;
+}
+
+.agreeCheck{
+	padding: 5px 0;
+	
+	
+}

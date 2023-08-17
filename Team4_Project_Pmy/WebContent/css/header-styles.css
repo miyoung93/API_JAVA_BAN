@@ -1,0 +1,51 @@
+/* 헤더 */
+
+#memberBox {
+	float: right;
+	width: 300px;
+	height: 100px;
+	padding: 10px;
+	font-weight: bold;
+	background-color: #FFFFFF;
+	border: 1px solid #999999;
+	border-radius: 10px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+#memberDiv {
+	margin-left: 40px;
+	line-height: 40px;
+}
+
+#logoutA {
+	margin-left: 5px;
+	line-height: 40px;
+}
+
+.hrDiv {
+	padding: 0px 10px;
+}
+.memberIcon{
+	float: left;
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+}
+
+.logoutIcon{
+	margin-left: -5px;
+	float: left;
+	width: 40px;
+	height: 40px;
+}
+
+#logo {
+	display: block;
+	margin:0px auto;
+}
+
+#logoDiv {
+	position:relative;
+}

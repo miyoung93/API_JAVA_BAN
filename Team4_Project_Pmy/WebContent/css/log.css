@@ -1,0 +1,235 @@
+@charset "UTF-8";
+
+
+/* 공통 */
+
+* {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+}
+
+body{
+	background-color: #F0F2F5;
+}
+
+@font-face {
+  font-family: "SF Pro Text";
+  font-style: normal;
+  font-weight: 300;
+  src: url("https://raw.githubusercontent.com/blaisck/sfwin/master/SFPro/TrueType/SFProText-Light.ttf");
+}
+@font-face {
+  font-family: "SF Pro Text";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://raw.githubusercontent.com/blaisck/sfwin/master/SFPro/TrueType/SFProText-Regular.ttf");
+}
+@font-face {
+  font-family: "SF Pro Text";
+  font-style: normal;
+  font-weight: 500;
+  src: url("https://raw.githubusercontent.com/blaisck/sfwin/master/SFPro/TrueType/SFProText-Medium.ttf");
+}
+@font-face {
+  font-family: "SF Pro Text";
+  font-style: normal;
+  font-weight: 600;
+  src: url("https://raw.githubusercontent.com/blaisck/sfwin/master/SFPro/TrueType/SFProText-SemiBold.ttf");
+}
+@font-face {
+  font-family: "SF Pro Text";
+  font-style: normal;
+  font-weight: 700;
+  src: url("https://raw.githubusercontent.com/blaisck/sfwin/master/SFPro/TrueType/SFProText-Bold.ttf");
+}
+@font-face {
+  font-family: "SF Pro Text";
+  font-style: normal;
+  font-weight: 900;
+  src: url("https://raw.githubusercontent.com/blaisck/sfwin/master/SFPro/TrueType/SFProText-Heavy.ttf");
+}
+@font-face {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 100;
+  src: url("https://raw.githubusercontent.com/blaisck/sfwin/master/SFPro/TrueType/SFProDisplay-Ultralight.ttf");
+}
+@font-face {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 200;
+  src: url("https://raw.githubusercontent.com/blaisck/sfwin/master/SFPro/TrueType/SFProDisplay-Thin.ttf");
+}
+@font-face {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 300;
+  src: url("https://raw.githubusercontent.com/blaisck/sfwin/master/SFPro/TrueType/SFProDisplay-Light.ttf");
+}
+@font-face {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://raw.githubusercontent.com/blaisck/sfwin/master/SFPro/TrueType/SFProDisplay-Regular.ttf");
+}
+@font-face {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 500;
+  src: url("https://raw.githubusercontent.com/blaisck/sfwin/master/SFPro/TrueType/SFProDisplay-Medium.ttf");
+}
+@font-face {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 600;
+  src: url("https://raw.githubusercontent.com/blaisck/sfwin/master/SFPro/TrueType/SFProDisplay-SemiBold.ttf");
+}
+@font-face {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 700;
+  src: url("https://raw.githubusercontent.com/blaisck/sfwin/master/SFPro/TrueType/SFProDisplay-Bold.ttf");
+}
+@font-face {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 800;
+  src: url("https://raw.githubusercontent.com/blaisck/sfwin/master/SFPro/TrueType/SFProDisplay-Black.ttf");
+}
+@font-face {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 900;
+  src: url("https://raw.githubusercontent.com/blaisck/sfwin/master/SFPro/TrueType/SFProDisplay-Heavy.ttf");
+}
+
+
+.logo {
+	width: 301.06px;
+	height: 106px;
+	margin: -15px;
+}
+
+.error_logo{
+	width: 30px;
+	overflow: clip;
+	overflow-clip-margin: content-box;
+	cursor: pointer;
+	text-align: center;
+}
+
+/* header */
+
+.header{
+	height: 30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+
+/* 로그인/로그아웃 */
+.loginMain{
+    text-align: center;
+}
+
+.introduce{
+	font-size: 24px;
+}
+
+.loginForm{
+	background-color: #FFFFFF;
+	border: none;
+	border-radius: 8px;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1), 0px 8px 16px rgba(0, 0, 0, 0.1);
+	box-sizing: border-box;
+    width: 396px;
+    margin: 0px auto;
+	padding-bottom: 24px;
+	padding-top: 10px;
+}
+
+.loginDiv{
+	width: 370px;
+	color: #1CLE21;
+	margin: auto;
+	padding: 6px;
+}
+
+.loginInput{
+	border: 1px solid #DDDFE2;
+	border-radius: 6px;
+	width: 330px;
+	height: 22px;
+	padding: 14px 16px;
+	font-size: 17px;
+	color: #1D2129;
+	vertical-align: middle;
+}
+
+.loginInput:focus{
+	outline:1px solid #1877F2;
+}
+
+.loginButton{
+	border: none;
+	border-radius: 6px;
+	width: 364px;
+	height: 48px;
+	background-color: #1877F2;
+	padding: 0px 16px;
+	font-size: 20px;
+	color: #FFFFFF;
+	font-weight: bold;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.findPwDiv{
+	margin-top: 16px;
+}
+
+.findPw{
+	margin-top: 16px;
+	text-decoration: none;
+	color: #1877F2;
+	font-size: 14px;
+}
+
+.findPw:hover {
+    text-decoration: underline;
+}
+
+.line{
+	border-bottom: 1px solid #dadde1;
+	margin: 20px 16px;
+}
+
+.createAccount{
+	border: none;
+	border-radius: 6px;
+	background-color: #42B72A;
+	height: 48px;
+	padding: 0 16px;
+	font-size: 17px;
+	color: #FFFFFF;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.fbLogin{
+	font-size: 18px;
+}
+
+
+/* footer */
+
+.footer-content{
+	background-color: #FFF;
+}
+
+.footerContent{
+	width: 90%;
+}
+
+

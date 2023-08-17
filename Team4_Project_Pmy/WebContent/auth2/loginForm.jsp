@@ -5,13 +5,16 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<link href="/Team4_Project/css/log.css" rel="stylesheet" type="text/css">
+	<link href="../log.css" rel="stylesheet" type="text/css">
 	<title>Facebook Login</title>
+	<script type="text/javascript">
+	
+	</script>
 </head>
 <body>
 	
-	<div class="header">
-		<div class="loginMain">
+	<div class="loginMain">
+		<div>
 			<div>
 				<img class="logo" href="" alt="Facebook Logo" src="../img/face_logo.png">
 			</div>
@@ -26,8 +29,8 @@
 			<div class="loginForm">
 				<form method="post" action="./login">
 					<div class="loginDiv">
-						<input class="loginInput" type="email" name="email" placeholder="이메일"
-							aria-label="이메일 ">
+						<input class="loginInput" type="email" name="email" placeholder="이메일 또는 전화번호"
+							aria-label="이메일 또는 전화번호">
 					</div>
 					<div class="loginDiv">
 						<input class="loginInput" type="password" name="password" placeholder="비밀번호"
@@ -37,13 +40,12 @@
 						<input class="loginButton" type="submit" name="login" value="로그인">
 					</div>
 					<div class="findPwDiv">
-						<a class="findPw" href="./findMyAccount">비밀번호를 잊으셨나요?</a>
+						<a class="findPw" href="">비밀번호를 잊으셨나요?</a>
 					</div>
 					<div class="line">
 					</div>
 					<div class="loginDiv">
-						<input class="createAccount" type="button" name="join" value="새 계정 만들기"
-							onclick='location.href="../join/join2.jsp"'>
+						<input class="createAccount" type="submit" name="join" value="새 계정 만들기">
 					</div>
 				</form>
 			</div>
@@ -51,7 +53,4 @@
 	</div>
 	
 </body>
-<script type="text/javascript">
-	
-</script>
 </html>

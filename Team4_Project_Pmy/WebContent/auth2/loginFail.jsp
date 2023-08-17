@@ -5,34 +5,27 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<link href="/Team4_Project/css/log.css" rel="stylesheet" type="text/css">
+	<link href="../log.css" rel="stylesheet" type="text/css">
 	<title>Facebook Login Fail</title>
 	<script type="text/javascript">
-		function emailNotFound(){
-			var emailNotFoundObj = document.getElementById('emailNotFound');
-			emailNotFoundObj.innerHTML = '입력하신 이메일 주소 또는 휴대폰 번호가 계정에 연결되지 않았습니다'
-				+ '.<b>회원님의 계정을 찾아서 로그인하세요.</b>';
-		}
+		
 	</script>
 </head>
 <body>
 	
-	<div class="header">
+	<div>
 		<div class="loginMain">
 			<div>
 				<img class="logo" href="" alt="Facebook Logo" src="../img/face_logo.png">
 			</div>
 			<div class="loginForm">
-				<form method="post" action="./login">
+				<form>
 					<div class="fbLogin">
 						Facebook에 로그인
 					</div>
 					<div class="loginDiv">
-						<input class="loginInput" type="email" name="email" placeholder="이메일"
-							aria-label="이메일">
-					</div>
-					<div>
-						입력하신 이메일 주소 또는 휴대폰 번호가 계정에 연결되지 않았습니다.<b>회원님의 계정을 찾아서 로그인하세요.</b>
+						<input class="loginInput" type="email" name="email" placeholder="이메일 또는 전화번호"
+							aria-label="이메일 또는 전화번호">
 					</div>
 					<div class="loginDiv">
 						<input class="loginInput" type="password" name="password" placeholder="비밀번호"
@@ -44,18 +37,12 @@
 						</button>
 					</div>
 					<div class="findPwDiv">
-						<a class="findPw" href="./findMyAccount">비밀번호를 잊으셨나요?</a>
+						<a class="findPw" href="">비밀번호를 잊으셨나요?</a>
 					</div>
 				</form>
 			</div>
 		</div>	
 	</div>
-	
-	<c:if test="${not empty requestScope.emailNotFound}">
-	    <script>
-	    emailNotFound();
-	    </script>
-	</c:if>
 	
 </body>
 </html>

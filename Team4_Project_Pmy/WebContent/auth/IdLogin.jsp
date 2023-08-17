@@ -6,12 +6,11 @@
 <head>
 	<meta charset="UTF-8">
 	<link href="/Team4_Project/css/log.css" rel="stylesheet" type="text/css">
-	<title>Facebook Login Fail</title>
+	<title>Facebook ID Login</title>
 	<script type="text/javascript">
-		function emailNotFound(){
-			var emailNotFoundObj = document.getElementById('emailNotFound');
-			emailNotFoundObj.innerHTML = '입력하신 이메일 주소 또는 휴대폰 번호가 계정에 연결되지 않았습니다'
-				+ '.<b>회원님의 계정을 찾아서 로그인하세요.</b>';
+		function failedPwd(){
+			var failedPwdObj = document.getElementById('failedPwd');
+			failedPwdObj.innerHTML = '<p>입력된 비밀번호가 올바르지 않습니다. 비밀번호를 잊으셨나요?</p>';
 		}
 	</script>
 </head>
@@ -25,35 +24,44 @@
 			<div class="loginForm">
 				<form method="post" action="./login">
 					<div class="fbLogin">
-						Facebook에 로그인
-					</div>
-					<div class="loginDiv">
-						<input class="loginInput" type="email" name="email" placeholder="이메일"
-							aria-label="이메일">
-					</div>
-					<div>
-						입력하신 이메일 주소 또는 휴대폰 번호가 계정에 연결되지 않았습니다.<b>회원님의 계정을 찾아서 로그인하세요.</b>
+						<div>
+							<div>
+								<img class="memberIcon" alt="member icon" src="/Team4_Project/img/profile_img.png">
+							</div>
+							<div id='memberDiv'>${memberDto.full_name}으로 로그인</div>
+						</div>
+						${memberDto.email} · 회원님이 아닌가요?
 					</div>
 					<div class="loginDiv">
 						<input class="loginInput" type="password" name="password" placeholder="비밀번호"
 							aria-label="비밀번호">
+						<input type="hidden" name="email" value="${memberDto.email}">
 					</div>
+					
+					<div id='failedPwd' style="text-align: left;">
+					</div>
+					
 					<div class="loginDiv">
 						<button class="loginButton" type="submit" name="login">
 							로그인
 						</button>
 					</div>
+					<div class="loginDiv">
+						<button class="loginButton" type="button" name="login">
+							다른 방법 시도
+						</button>
+					</div>
 					<div class="findPwDiv">
-						<a class="findPw" href="./findMyAccount">비밀번호를 잊으셨나요?</a>
+						<a class="findPw" href="./findMyAccount">계정을 잊으셨나요?</a>
 					</div>
 				</form>
 			</div>
 		</div>	
 	</div>
 	
-	<c:if test="${not empty requestScope.emailNotFound}">
+	<c:if test="${not empty requestScope.failedPwd}">
 	    <script>
-	    emailNotFound();
+			failedPwd();
 	    </script>
 	</c:if>
 	
